@@ -22,6 +22,7 @@ const config = {
       // debug:true
     },
   },
+  /** the available scenes for this game */
   scene: [Loader, Menu],
 };
 

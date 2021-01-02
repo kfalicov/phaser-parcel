@@ -1,5 +1,5 @@
 // asset import syntax for parcel
-// import image from "url:../assets/.../image.png";
+import fish from "url:../assets/red herring.png";
 
 export class Loader extends Phaser.Scene {
   constructor() {
@@ -9,9 +9,10 @@ export class Loader extends Phaser.Scene {
     /**
      * put all of the loading scripts here
      */
+    this.load.image("fish", fish);
   }
   create() {
-    //start the next scene (usually the main menu) after preloading is completed
+    //start the next scene in the scene list (found in main.js's config object) after preloading is completed
     this.scene.manager.scenes[1].scene.start();
   }
 }
